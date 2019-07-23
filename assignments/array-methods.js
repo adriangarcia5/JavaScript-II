@@ -119,3 +119,13 @@ runners.forEach(function(currentValue){
 console.log(calendarFutureRaces);
 
 // Problem 3
+// the person who donated the most money recieves a trophy in thanks for the donation!
+let donationWinner = [];
+
+const biggestDonation = runners.filter(function(currentValue){
+    if (currentValue.donation > 291){
+        donationWinner.push(currentValue);
+    }
+    return donationWinner;
+});
+console.log(donationWinner);
