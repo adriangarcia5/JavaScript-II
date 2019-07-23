@@ -96,7 +96,7 @@ console.log(allDonations);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-// Everyone who donated above 200$ will recieve a plaque with their name on it. 
+// Everyone who donated above 200$ will recieve a plaque with their name on it in thanks for their high donation. 
 let highestDonations = [];
 
 const largeDonations = runners.filter(function(currentValue){
@@ -109,5 +109,13 @@ console.log(highestDonations);
 
 
 // Problem 2
+// Sending calendar for futures races through the runners emails.
+
+let calendarFutureRaces = [];
+
+runners.forEach(function(currentValue){
+    calendarFutureRaces.push(`${currentValue.first_name}, ${currentValue.email}`);
+});
+console.log(calendarFutureRaces);
 
 // Problem 3
