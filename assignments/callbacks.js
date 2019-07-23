@@ -55,8 +55,13 @@ function sumNums(x, y, cb) {
 
 
 function multiplyNums(x, y, cb) {
+  return cb (x, y);
   // multiplyNums multiplies two numbers and passes the result to the callback.
 }
+const multiply  = function (x, y){
+  return x * y;
+}
+multiplyNums(3, 4, multiply);
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
