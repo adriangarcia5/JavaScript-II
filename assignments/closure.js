@@ -1,6 +1,23 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function familyMember(lastName){
+  const firstNameOne = "Parents";
+  console.log(`${lastName} ${firstNameOne}`);
+    
+    function familyMemberOne(){
+      const firstNameTwo = "Gaby";
+      console.log(`${firstNameTwo} ${lastName}`);
+
+        function familyMemberTwo(){
+          const firstNameThree = "Juan";
+          console.log(`${firstNameThree} ${lastName}`);
+        }
+        familyMemberTwo();
+    }
+    familyMemberOne();
+}
+familyMember("Garcia");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
