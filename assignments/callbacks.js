@@ -42,7 +42,7 @@ function last(arr, cb) {
   const arrEnd = function (arr){
     return arr[arr.length-1];
   }
-last(items, arrLength);
+last(items, arrEnd);
 
 function sumNums(x, y, cb) {
   return cb(x, y);
@@ -64,9 +64,14 @@ const multiply  = function (x, y){
 multiplyNums(3, 4, multiply);
 
 function contains(item, list, cb) {
+  return cb (item, list);
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 }
+const itemChecker = function (item, list){
+  return (list.includes(item)); 
+}
+contains("Gum", items, itemChecker);
 
 /* STRETCH PROBLEM */
 
